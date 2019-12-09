@@ -11,7 +11,8 @@ server.get("/test", (req, res) => {
     text: "Hello!",
   });
 });
-server.use('/api/v1', router)
-server.listen(3004, () => {
+server.use('/api/v1', router);
+const port = process.env.PORT || 3000;
+server.listen(port, () => {
   console.log("JSON Server is running");
 });
