@@ -7,7 +7,7 @@ const cors = require("cors");
 const router = jsonServer.router(path.join(__dirname, "db.json"));
 
 server.use(middlewares);
-server.use(cors());
+//server.use(cors());
 server.get("/test", (req, res) => {
   res.status(200).send({
     text: "Hello!"
