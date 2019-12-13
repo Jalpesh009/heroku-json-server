@@ -4,7 +4,8 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "start": "nodemon server.js",
+        "start": "node server.js",
+        "dev": "nodemon server.js",
         "stop": "lsof -ti :3004 | xargs kill"
     },
     "keywords": [],
