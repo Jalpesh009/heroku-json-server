@@ -12,7 +12,7 @@ server.get("/test", (req, res) => {
   });
 });
 server.use('/api/v1', router);
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3004;
 server.listen(port, () => {
-  console.log("JSON Server is running");
+  console.log("JSON Server is running",port);
 });

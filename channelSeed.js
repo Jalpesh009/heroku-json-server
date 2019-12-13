@@ -20,12 +20,16 @@ for (let i = 1; i <= 100; i++) {
       image: faker.image.avatar(),
       name: faker.name.title(),
       epg: {
-        name: faker.name.title(),
-        description: faker.name.title(),
+        name: faker.name.findName(),
+        description: faker.name.lastName(),
         end: faker.date.past(10),
-        start: faker.date.past(10),
-        image: faker.image.avatar()
-      }
+        start: faker.date.past(3),
+        image: faker.image.avatar(),
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      createdAt: new Date(),
+      updatedAt: new Date()
     })
     .write();
 }

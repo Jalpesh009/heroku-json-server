@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "start": "node server.js",
+        "start": "nodemon server.js",
         "stop": "lsof -ti :3004 | xargs kill"
     },
     "keywords": [],
@@ -14,5 +14,8 @@
         "faker": "^4.1.0",
         "json-server": "^0.15.1",
         "lowdb": "^1.0.0"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.1"
     }
 }
