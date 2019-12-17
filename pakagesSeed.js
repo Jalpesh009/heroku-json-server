@@ -16,7 +16,7 @@ for (let i = 1; i <= 17; i++) {
   db.get("pakages")
     .push({
       id: helper.mongoObjectId(),
-      name: faker.random.word()
+      name: faker.address.country()
     })
     .write();
 }
